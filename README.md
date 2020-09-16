@@ -1,3 +1,5 @@
+# Team C - Case 3
+
 ## Glossary
 
 - Company
@@ -22,3 +24,11 @@
 - booking max 3 weeks per car
 - view booking given drivers license number
 - bookingcancel given drivers license number
+
+### Logical Data Model
+
+![ldm pic](/ldm.png)
+
+### Use Case Model
+
+![ucm pic](/ucm.png)
