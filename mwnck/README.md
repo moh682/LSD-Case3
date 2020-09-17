@@ -56,11 +56,11 @@ Example contract repository
 
 ## Logical Data Model
 
-![](materials/Faraday car rental.png)
+![](materials/FaradayCarRentalLDM.png)
 
 ## Use Case Model
 
-![](materials/Faraday car rental UC.png)
+![](materials/FaradayCarRentalUCM.png)
 
 ### Use case descriptions
 
