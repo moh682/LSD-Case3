@@ -114,6 +114,7 @@ A confirmation email is sent to driver.
 
 1. An error message is shown on screen. No booking is created.
 
+-----------------------------------------------------------------
 #### UC2
 
 **Name**: Cancel booking
@@ -134,6 +135,7 @@ A booking is cancelled.
 A confirmation message is shown on screen.
 A confirmation email is sent to driver.
 
+-----------------------------------------------------------------
 #### UC3
 
 **Name**: See booking
@@ -152,6 +154,7 @@ A confirmation email is sent to driver.
 **Postcondition** (Success guarantees)
 Booking details are shown.
 
+-----------------------------------------------------------------
 #### UC4
 
 **Name**: Show available cars
@@ -172,7 +175,7 @@ Booking details are shown.
 **Postcondition** (Success guarantees)
 A list of available cars is shown.
 
-
+-----------------------------------------------------------------
 #### UC5
 
 **Name**: Return rental car
