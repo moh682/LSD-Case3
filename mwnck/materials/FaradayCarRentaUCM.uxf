@@ -5,7 +5,7 @@
     <id>UMLUseCase</id>
     <coordinates>
       <x>240</x>
-      <y>280</y>
+      <y>270</y>
       <w>120</w>
       <h>40</h>
     </coordinates>
@@ -16,7 +16,7 @@
     <id>UMLUseCase</id>
     <coordinates>
       <x>420</x>
-      <y>280</y>
+      <y>270</y>
       <w>120</w>
       <h>40</h>
     </coordinates>
@@ -27,19 +27,19 @@
     <id>UMLUseCase</id>
     <coordinates>
       <x>790</x>
-      <y>450</y>
+      <y>440</y>
       <w>170</w>
-      <h>60</h>
+      <h>50</h>
     </coordinates>
     <panel_attributes>Select pick up station
-AND delivery station</panel_attributes>
+</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
     <id>UMLUseCase</id>
     <coordinates>
       <x>390</x>
-      <y>450</y>
+      <y>440</y>
       <w>170</w>
       <h>40</h>
     </coordinates>
@@ -50,7 +50,7 @@ AND delivery station</panel_attributes>
     <id>UMLUseCase</id>
     <coordinates>
       <x>580</x>
-      <y>450</y>
+      <y>440</y>
       <w>170</w>
       <h>40</h>
     </coordinates>
@@ -61,7 +61,7 @@ AND delivery station</panel_attributes>
     <id>UMLUseCase</id>
     <coordinates>
       <x>690</x>
-      <y>140</y>
+      <y>130</y>
       <w>170</w>
       <h>40</h>
     </coordinates>
@@ -72,7 +72,7 @@ AND delivery station</panel_attributes>
     <id>UMLUseCase</id>
     <coordinates>
       <x>390</x>
-      <y>650</y>
+      <y>640</y>
       <w>170</w>
       <h>40</h>
     </coordinates>
@@ -83,7 +83,7 @@ AND delivery station</panel_attributes>
     <id>UMLUseCase</id>
     <coordinates>
       <x>680</x>
-      <y>280</y>
+      <y>270</y>
       <w>170</w>
       <h>50</h>
     </coordinates>
@@ -94,7 +94,7 @@ AND delivery station</panel_attributes>
     <id>UMLUseCase</id>
     <coordinates>
       <x>430</x>
-      <y>100</y>
+      <y>90</y>
       <w>170</w>
       <h>40</h>
     </coordinates>
@@ -105,7 +105,7 @@ AND delivery station</panel_attributes>
     <id>UMLUseCase</id>
     <coordinates>
       <x>420</x>
-      <y>10</y>
+      <y>0</y>
       <w>170</w>
       <h>40</h>
     </coordinates>
@@ -116,7 +116,7 @@ AND delivery station</panel_attributes>
     <id>UMLActor</id>
     <coordinates>
       <x>130</x>
-      <y>260</y>
+      <y>250</y>
       <w>60</w>
       <h>120</h>
     </coordinates>
@@ -128,7 +128,7 @@ AND delivery station</panel_attributes>
     <id>Relation</id>
     <coordinates>
       <x>530</x>
-      <y>280</y>
+      <y>270</y>
       <w>170</w>
       <h>40</h>
     </coordinates>
@@ -140,7 +140,7 @@ AND delivery station</panel_attributes>
     <id>Relation</id>
     <coordinates>
       <x>350</x>
-      <y>280</y>
+      <y>270</y>
       <w>90</w>
       <h>40</h>
     </coordinates>
@@ -152,7 +152,7 @@ AND delivery station</panel_attributes>
     <id>UMLUseCase</id>
     <coordinates>
       <x>420</x>
-      <y>200</y>
+      <y>190</y>
       <w>120</w>
       <h>40</h>
     </coordinates>
@@ -163,7 +163,7 @@ AND delivery station</panel_attributes>
     <id>Relation</id>
     <coordinates>
       <x>340</x>
-      <y>210</y>
+      <y>200</y>
       <w>100</w>
       <h>100</h>
     </coordinates>
@@ -175,7 +175,7 @@ AND delivery station</panel_attributes>
     <id>Relation</id>
     <coordinates>
       <x>530</x>
-      <y>150</y>
+      <y>140</y>
       <w>180</w>
       <h>90</h>
     </coordinates>
@@ -187,7 +187,7 @@ AND delivery station</panel_attributes>
     <id>Relation</id>
     <coordinates>
       <x>520</x>
-      <y>170</y>
+      <y>160</y>
       <w>230</w>
       <h>140</h>
     </coordinates>
@@ -199,7 +199,7 @@ AND delivery station</panel_attributes>
     <id>Relation</id>
     <coordinates>
       <x>180</x>
-      <y>290</y>
+      <y>280</y>
       <w>80</w>
       <h>50</h>
     </coordinates>
@@ -210,7 +210,7 @@ AND delivery station</panel_attributes>
     <id>Relation</id>
     <coordinates>
       <x>200</x>
-      <y>330</y>
+      <y>320</y>
       <w>220</w>
       <h>350</h>
     </coordinates>
@@ -221,19 +221,19 @@ AND delivery station</panel_attributes>
     <id>Relation</id>
     <coordinates>
       <x>510</x>
-      <y>300</y>
-      <w>300</w>
+      <y>290</y>
+      <w>310</w>
       <h>190</h>
     </coordinates>
     <panel_attributes>lt=&lt;.
 &lt;&lt;include&gt;&gt;</panel_attributes>
-    <additional_attributes>280.0;165.0;10.0;10.0</additional_attributes>
+    <additional_attributes>290.0;165.0;10.0;10.0</additional_attributes>
   </element>
   <element>
     <id>Relation</id>
     <coordinates>
       <x>490</x>
-      <y>310</y>
+      <y>300</y>
       <w>140</w>
       <h>160</h>
     </coordinates>
@@ -245,7 +245,7 @@ AND delivery station</panel_attributes>
     <id>Relation</id>
     <coordinates>
       <x>470</x>
-      <y>310</y>
+      <y>300</y>
       <w>90</w>
       <h>160</h>
     </coordinates>
@@ -257,7 +257,7 @@ AND delivery station</panel_attributes>
     <id>Relation</id>
     <coordinates>
       <x>470</x>
-      <y>480</y>
+      <y>470</y>
       <w>90</w>
       <h>180</h>
     </coordinates>
@@ -269,7 +269,7 @@ AND delivery station</panel_attributes>
     <id>Relation</id>
     <coordinates>
       <x>510</x>
-      <y>480</y>
+      <y>470</y>
       <w>140</w>
       <h>190</h>
     </coordinates>
@@ -281,19 +281,19 @@ AND delivery station</panel_attributes>
     <id>Relation</id>
     <coordinates>
       <x>540</x>
-      <y>490</y>
-      <w>270</w>
-      <h>200</h>
+      <y>460</y>
+      <w>280</w>
+      <h>220</h>
     </coordinates>
     <panel_attributes>lt=&lt;.
 &lt;&lt;include&gt;&gt;</panel_attributes>
-    <additional_attributes>250.0;10.0;10.0;180.0</additional_attributes>
+    <additional_attributes>260.0;15.0;10.0;200.0</additional_attributes>
   </element>
   <element>
     <id>Relation</id>
     <coordinates>
       <x>310</x>
-      <y>110</y>
+      <y>100</y>
       <w>150</w>
       <h>190</h>
     </coordinates>
@@ -305,12 +305,37 @@ AND delivery station</panel_attributes>
     <id>Relation</id>
     <coordinates>
       <x>290</x>
-      <y>20</y>
+      <y>10</y>
       <w>150</w>
       <h>280</h>
     </coordinates>
     <panel_attributes>lt=.&gt;
 &lt;&lt;extends&gt;&gt;</panel_attributes>
     <additional_attributes>130.0;10.0;10.0;260.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLUseCase</id>
+    <coordinates>
+      <x>830</x>
+      <y>370</y>
+      <w>170</w>
+      <h>60</h>
+    </coordinates>
+    <panel_attributes>Select pick up station 
+(for delivery)
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>520</x>
+      <y>290</y>
+      <w>330</w>
+      <h>140</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;.
+&lt;&lt;include&gt;&gt;</panel_attributes>
+    <additional_attributes>310.0;115.0;10.0;10.0</additional_attributes>
   </element>
 </diagram>
