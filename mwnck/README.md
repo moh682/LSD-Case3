@@ -104,8 +104,6 @@ None
 
 ---
 
-![ucm_pic](materials/FaradayCarRentalUCM.png)
-
 #### UC2
 
 **Name**: Book rental car
@@ -198,22 +196,14 @@ Booking details are shown.
 
 **Primary Actor**: (Travel agency) Employee
 
-**Preconditions**: User must be logged in. Specific booking must exist and be active.
+**Preconditions**: User must be logged in. Booking must be found. Specific booking must exist and be active.
 
 **Main Scenario**:
 
-1. User selects booking.
-2. User registers that car has been delivered.
-3. System calculates extra fee if needed.
-4. User ends booking.
-
-**Extensions**:
-
-1. Calculate extra fee.
+1. User registers that car has been delivered.
+2. User ends booking.
+3. A confirmation message is shown on screen.
 
 **Postcondition** (Success guarantees)
 A car is registered at a pick up place.
-A booking has ended.
-An extra fee may have been calculated.
-A confirmation message is shown on screen.
 A confirmation email is sent to driver.
