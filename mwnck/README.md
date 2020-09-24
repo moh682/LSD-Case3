@@ -33,26 +33,26 @@ Example contract repository
 
 ### Verbs
 
-| Word                     | UCM | Description                                               |
-| :----------------------- | :-: | :-------------------------------------------------------- |
-| Gain access to system    |     | aka log in? TBD if customer needs it. Is precondition for relevant UCs|
-| Pick up car              |     |                                                           |
-| Identify Airport         |     | Identified by IATA.                                       |
-| Identify Hotel           |     | Identified by 6 digit no.                                 |
-| Identify Rental Car      |     | Identified by license plate.                              |
-| Identify Driver          |     | By license number and passport name. Must be >=25 yrs.    |
-| Book rental car          |  x  | Must be <=3 weeks. Pick up and delivery place may differ. |
-| State pickup station     |  x  | Select pickup station.                                    |
-| State pickup time        |  x  |                                                           |
-| State delivery time      |  x  |                                                           |
-| Calculate extra fee      |  x  |                                                           |
-| Move rental car          |  ?  | System should handle cars being moved.                    |
-| Show list available cars |  x  | Per city per time period.                                 |
-| Make booking             |  x  | See 'Book rental car'                                     |
-| Return error message     |     |                                                           |
-| See booking              |  x  |                                                           |
-| Cancel booking           |  x  |                                                           |
-| Find booking             |     | Is precondition for relevant UCs                          |
+| Word                     | UCM | Description                                                            |
+| :----------------------- | :-: | :--------------------------------------------------------------------- |
+| Gain access to system    |     | aka log in? TBD if customer needs it. Is precondition for relevant UCs |
+| Pick up car              |     |                                                                        |
+| Identify Airport         |     | Identified by IATA.                                                    |
+| Identify Hotel           |     | Identified by 6 digit no.                                              |
+| Identify Rental Car      |     | Identified by license plate.                                           |
+| Identify Driver          |     | By license number and passport name. Must be >=25 yrs.                 |
+| Book rental car          |  x  | Must be <=3 weeks. Pick up and delivery place may differ.              |
+| State pickup station     |  x  | Select pickup station.                                                 |
+| State pickup time        |  x  |                                                                        |
+| State delivery time      |  x  |                                                                        |
+| Calculate extra fee      |  x  |                                                                        |
+| Move rental car          |  ?  | System should handle cars being moved.                                 |
+| Show list available cars |  x  | Per city per time period.                                              |
+| Make booking             |  x  | See 'Book rental car'                                                  |
+| Return error message     |     |                                                                        |
+| See booking              |  x  |                                                                        |
+| Cancel booking           |  x  |                                                                        |
+| Find booking             |     | Is precondition for relevant UCs                                       |
 
 ## Logical Data Model
 
@@ -79,45 +79,78 @@ PickUpPlace kan deaktiveres f.eks. hvis et hotel lukker/renoveres o. lign.
 
 #### UC1
 
+**Name**: Show available cars
+
+**Description**: Show available cars of a specific station and time period.
+
+**Primary Actor**: (Travel agency) Employee, 3rd party user
+
+**Preconditions**: User must be logged in.
+
+**Main scenario**:
+
+1. User selects pick up station.
+2. User selects pick up time.
+3. User selects delivery time.
+4. System lists available cars.
+
+**Alternative scenario**:
+
+4b. System shows an empty list and an on-screen message.
+
+**Post conditions**:
+
+None
+
+---
+
+![ucm_pic](materials/FaradayCarRentalUCM.png)
+
+#### UC2
+
 **Name**: Book rental car
 
 **Description**: Book a rental car in a specific time period from a specific pick up place.
 
 **Primary Actor**: (Travel agency) Employee
+**Supporting Actor**: System
 
 **Preconditions**: User must be logged in.
 
 **Main Scenario**:
 
-1. User selects pick up station.
-2. User selects pick up time.
-3. User selects delivery time.
-4. System list available cars.
-5. User selects a car.
-6. User types in driver information.
-7. User saves the booking.
+2. User selects a car.
+3. System calculates extra fee if required.
+4. User types in driver information.
+5. User saves the booking.
+6. A confirmation message is shown on screen.
 
 **Extensions**:
 
-1. Calculate extra fee.
-2. Return error message.
+1: Show available cars: Include Show available cars.
 
 **Postcondition** (Success guarantees)
-A booking is created.
-A confirmation message is shown on screen.
+
+A booking is created and persisted.
+
 A confirmation email is sent to driver.
 
 **Alternative scenarios**
 
-1. The selected car is unavailable in the selected time period.
+2a. An error message is shown that the car is now unavailable.
+
+5a. Persistence system is unavailable.
+
+    1. An error message is shown.
+    2. The booking is persisted locally for later system persistence.
 
 **Alternative postconditions**
 
-1. An error message is shown on screen. No booking is created.
+1. Local persistence fails, an error message is shown on screen. No booking is created.
 
 ---
 
-#### UC2
+#### UC3
 
 **Name**: Cancel booking
 
@@ -125,21 +158,20 @@ A confirmation email is sent to driver.
 
 **Primary Actor**: (Travel agency) Employee
 
-**Preconditions**: User must be logged in. Booking has been created. Booking is upcoming.
+**Preconditions**: User must be logged in. Booking has been created. Booking must be found. Booking is upcoming.
 
 **Main Scenario**:
 
-1. User selects booking.
-2. User cancels booking.
+1. User cancels booking.
+2. A confirmation message is shown on screen.
 
 **Postcondition** (Success guarantees)
 A booking is cancelled.
-A confirmation message is shown on screen.
 A confirmation email is sent to driver.
 
 ---
 
-#### UC3
+#### UC4
 
 **Name**: See booking
 
@@ -147,37 +179,14 @@ A confirmation email is sent to driver.
 
 **Primary Actor**: (Travel agency) Employee
 
-**Preconditions**: User must be logged in. Booking must exist in system.
+**Preconditions**: User must be logged in. Booking must exist in system. Booking must be found.
 
 **Main Scenario**:
 
-1. User selects specific booking.
-2. System shows booking details.
+1. System shows booking details.
 
 **Postcondition** (Success guarantees)
 Booking details are shown.
-
----
-
-#### UC4
-
-**Name**: Show available cars
-
-**Description**: Lists available cars based on pickup time and place.
-
-**Primary Actor**: (Travel agency) Employee, 3rd party user
-
-**Preconditions**: None
-
-**Main Scenario**:
-
-1. User selects pick up station.
-2. User selects pick up time.
-3. User selects delivery time.
-4. System lists available cars.
-
-**Postcondition** (Success guarantees)
-A list of available cars is shown.
 
 ---
 
