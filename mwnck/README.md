@@ -35,7 +35,7 @@ Example contract repository
 
 | Word                     | UCM | Description                                               |
 | :----------------------- | :-: | :-------------------------------------------------------- |
-| Gain access to system    |  x  | aka log in                                                |
+| Gain access to system    |     | aka log in? TBD if customer needs it. Is precondition for relevant UCs|
 | Pick up car              |     |                                                           |
 | Identify Airport         |     | Identified by IATA.                                       |
 | Identify Hotel           |     | Identified by 6 digit no.                                 |
@@ -52,6 +52,7 @@ Example contract repository
 | Return error message     |     |                                                           |
 | See booking              |  x  |                                                           |
 | Cancel booking           |  x  |                                                           |
+| Find booking             |     | Is precondition for relevant UCs                          |
 
 ## Logical Data Model
 
