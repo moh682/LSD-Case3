@@ -169,22 +169,22 @@ A confirmation email is sent to driver.
 
 ---
 
-#### UC4
+~~#### UC4~~
 
-**Name**: See booking
+~~**Name**: See booking~~
 
-**Description**: See details for a specific booking.
+~~**Description**: See details for a specific booking.~~
 
-**Primary Actor**: (Travel agency) Employee
+~~**Primary Actor**: (Travel agency) Employee~~
 
-**Preconditions**: User must be logged in. Booking must exist in system. Booking must be found.
+~~**Preconditions**: User must be logged in. Booking must exist in system. Booking must be found.~~
 
-**Main Scenario**:
+~~**Main Scenario**:~~
 
-1. System shows booking details.
+~~1. System shows booking details.~~
 
-**Postcondition** (Success guarantees)
-Booking details are shown.
+~~**Postcondition** (Success guarantees)~~
+~~Booking details are shown.~~
 
 ---
 
@@ -224,7 +224,7 @@ A confirmation email is sent to driver.
 
 1. User types in a booking number.
 2. System finds the booking.
-3. System displays the booking.
+3. System displays the booking with details.
 
 **Alternative scenarios**
 
