@@ -202,7 +202,8 @@ A confirmation email is sent to driver.
 
 1. User registers that car has been delivered.
 2. User ends booking.
-3. A confirmation message is shown on screen.
+3. System calculates extra fee if required.
+4. A confirmation message is shown on screen.
 
 **Postcondition** (Success guarantees)
 A car is registered at a pick up place.
