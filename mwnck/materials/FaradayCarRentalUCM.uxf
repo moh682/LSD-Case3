@@ -37,8 +37,8 @@
   <element>
     <id>UMLUseCase</id>
     <coordinates>
-      <x>640</x>
-      <y>250</y>
+      <x>630</x>
+      <y>280</y>
       <w>170</w>
       <h>40</h>
     </coordinates>
@@ -61,8 +61,8 @@ employee
   <element>
     <id>UMLUseCase</id>
     <coordinates>
-      <x>660</x>
-      <y>410</y>
+      <x>650</x>
+      <y>370</y>
       <w>120</w>
       <h>50</h>
     </coordinates>
@@ -148,50 +148,27 @@ employee
     <additional_attributes>10.0;130.0;220.0;10.0</additional_attributes>
   </element>
   <element>
-    <id>UMLUseCase</id>
-    <coordinates>
-      <x>660</x>
-      <y>330</y>
-      <w>170</w>
-      <h>50</h>
-    </coordinates>
-    <panel_attributes>See booking</panel_attributes>
-    <additional_attributes/>
-  </element>
-  <element>
     <id>Relation</id>
     <coordinates>
-      <x>570</x>
-      <y>360</y>
+      <x>560</x>
+      <y>350</y>
       <w>110</w>
-      <h>90</h>
+      <h>60</h>
     </coordinates>
     <panel_attributes>lt=&lt;.
 &lt;&lt;extends&gt;&gt;</panel_attributes>
-    <additional_attributes>10.0;12.0;90.0;70.0</additional_attributes>
+    <additional_attributes>10.0;12.0;90.0;40.0</additional_attributes>
   </element>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>570</x>
-      <y>340</y>
-      <w>110</w>
-      <h>40</h>
+      <x>560</x>
+      <y>290</y>
+      <w>90</w>
+      <h>80</h>
     </coordinates>
     <panel_attributes>lt=&lt;.
 &lt;&lt;extends&gt;&gt;</panel_attributes>
-    <additional_attributes>10.0;15.0;90.0;20.0</additional_attributes>
-  </element>
-  <element>
-    <id>Relation</id>
-    <coordinates>
-      <x>570</x>
-      <y>260</y>
-      <w>120</w>
-      <h>100</h>
-    </coordinates>
-    <panel_attributes>lt=&lt;.
-&lt;&lt;extends&gt;&gt;</panel_attributes>
-    <additional_attributes>10.0;75.0;70.0;10.0</additional_attributes>
+    <additional_attributes>10.0;55.0;70.0;10.0</additional_attributes>
   </element>
 </diagram>
