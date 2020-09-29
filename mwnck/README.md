@@ -207,3 +207,29 @@ Booking details are shown.
 **Postcondition** (Success guarantees)
 A car is registered at a pick up place.
 A confirmation email is sent to driver.
+
+---
+
+#### UC6
+
+**Name**: Find booking
+
+**Description**: Finds a specific booking
+
+**Primary Actor**: (Travel agency) Employee
+
+**Preconditions**: User must be logged in.
+
+**Main Scenario**:
+
+1. User types in a booking number.
+2. System finds the booking.
+3. System displays the booking.
+
+**Alternative scenarios**
+
+2a 1. System is unable to find the booking.
+2a 2. An error message is shown that the booking was not found.
+
+**Postcondition** (Success guarantees)
+A booking is found and shown to user.
