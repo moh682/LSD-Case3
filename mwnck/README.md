@@ -73,7 +73,7 @@ PickUpPlace kan deaktiveres f.eks. hvis et hotel lukker/renoveres o. lign.
 
 ## Use Case Model
 
-![ucm_pic](materials/FaradayCarRentalUCM.png)
+![ucm_pic](materials/UC1.png)
 
 ### Use case descriptions
 
@@ -101,6 +101,8 @@ PickUpPlace kan deaktiveres f.eks. hvis et hotel lukker/renoveres o. lign.
 **Post conditions**:
 
 None
+
+![ucm_pic](materials/FaradayCarRentalUCM.png)
 
 ---
 
