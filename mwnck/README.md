@@ -73,7 +73,7 @@ PickUpPlace kan deaktiveres f.eks. hvis et hotel lukker/renoveres o. lign.
 
 ## Use Case Model
 
-![ucm_pic](materials/UC1.png)
+![ucm_pic](materials/FaradayCarRentalUCM.png)
 
 ### Use case descriptions
 
@@ -102,7 +102,7 @@ PickUpPlace kan deaktiveres f.eks. hvis et hotel lukker/renoveres o. lign.
 
 None
 
-![ucm_pic](materials/FaradayCarRentalUCM.png)
+![ucm_pic](materials/UC1.png)
 
 ---
 
@@ -148,6 +148,7 @@ A confirmation email is sent to driver.
 
 1. Local persistence fails, an error message is shown on screen. No booking is created.
 
+![ucm_pic](materials/UC2.png)
 ---
 
 #### UC3
@@ -169,6 +170,7 @@ A confirmation email is sent to driver.
 A booking is cancelled.
 A confirmation email is sent to driver.
 
+![ucm_pic](materials/UC3.png)
 ---
 
 ~~#### UC4~~
@@ -211,6 +213,7 @@ A confirmation email is sent to driver.
 A car is registered at a pick up place.
 A confirmation email is sent to driver.
 
+![ucm_pic](materials/UC5.png)
 ---
 
 #### UC6
@@ -236,3 +239,5 @@ A confirmation email is sent to driver.
 
 **Postcondition** (Success guarantees)
 A booking is found and shown to user.
+
+![ucm_pic](materials/UC6.png)
