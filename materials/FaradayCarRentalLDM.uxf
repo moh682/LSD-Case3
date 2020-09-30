@@ -43,7 +43,7 @@ active
       <w>100</w>
       <h>90</h>
     </coordinates>
-    <panel_attributes>PickUpPlace
+    <panel_attributes>Place
 --
 name
 address
