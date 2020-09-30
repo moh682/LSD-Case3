@@ -1,0 +1,78 @@
+package booking;
+
+import booking.dto.*;
+import booking.eto.UnavailableException;
+import booking.eto.InvalidInputException;
+import booking.eto.NotFoundException;
+import booking.eto.PersistanceFailedException;
+
+import java.util.Collection;
+
+public interface Contract {
+
+    /**
+     * @param bookingCriteria
+     * @return CarSummary
+     * @throws NotFoundException
+     * @throws InvalidInputException
+     */
+    Collection<CarSummary> listAvailableCars(BookingCriteria bookingCriteria) throws NotFoundException, InvalidInputException;
+
+    /**
+     *
+     * @param bookingCriteria
+     * @return fee
+     * @throws InvalidInputException
+     */
+    Double calculateFee(BookingCriteria bookingCriteria) throws InvalidInputException;
+
+    /**
+     *
+     * @param bookingCriteria
+     * @param fee
+     * @param driverDetails
+     * @return bookingDetails
+     * @throws InvalidInputException
+     */
+    BookingDetails createBooking(BookingCriteria bookingCriteria, Double fee, DriverDetails driverDetails) throws InvalidInputException;
+
+    /**
+     *
+     * @param bookingDetails
+     * @return bookingDetails
+     * @throws PersistanceFailedException
+     * @throws UnavailableException
+     */
+    BookingDetails saveBooking(BookingDetails bookingDetails) throws PersistanceFailedException, UnavailableException;
+
+    /**
+     *
+     * @param id
+     * @return boolean
+     * @throws PersistanceFailedException
+     * @throws NotFoundException
+     * @throws UnavailableException
+     * @throws InvalidInputException
+     */
+    boolean cancelBooking(BookingIdentifier id) throws PersistanceFailedException, NotFoundException, UnavailableException, InvalidInputException;
+
+    /**
+     *
+     * @param id
+     * @return bookingDetails
+     * @throws PersistanceFailedException
+     * @throws NotFoundException
+     * @throws UnavailableException
+     * @throws InvalidInputException
+     */
+    BookingDetails endBooking(BookingIdentifier id) throws PersistanceFailedException, NotFoundException, UnavailableException, InvalidInputException;
+
+    /**
+     *
+     * @param id
+     * @return bookingDetails
+     * @throws NotFoundException
+     * @throws InvalidInputException
+     */
+    BookingDetails findBooking(BookingIdentifier id) throws NotFoundException, InvalidInputException;
+}
