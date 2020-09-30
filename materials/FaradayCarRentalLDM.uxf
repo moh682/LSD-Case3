@@ -4,7 +4,7 @@
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>220</x>
+      <x>170</x>
       <y>460</y>
       <w>100</w>
       <h>90</h>
@@ -18,7 +18,7 @@ IATA
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>400</x>
+      <x>350</x>
       <y>460</y>
       <w>130</w>
       <h>150</h>
@@ -38,12 +38,12 @@ active
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>160</x>
+      <x>110</x>
       <y>270</y>
       <w>100</w>
       <h>90</h>
     </coordinates>
-    <panel_attributes>PickUpPlace
+    <panel_attributes>Place
 --
 name
 address
@@ -54,7 +54,7 @@ active
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>100</x>
+      <x>50</x>
       <y>460</y>
       <w>100</w>
       <h>90</h>
@@ -69,7 +69,7 @@ rating
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>650</x>
+      <x>600</x>
       <y>250</y>
       <w>100</w>
       <h>140</h>
@@ -77,7 +77,6 @@ rating
     <panel_attributes>Person
 --
 name
-address
 email
 dob
 ssn
@@ -89,7 +88,7 @@ active
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>580</x>
+      <x>530</x>
       <y>460</y>
       <w>100</w>
       <h>110</h>
@@ -105,7 +104,7 @@ password
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>700</x>
+      <x>650</x>
       <y>460</y>
       <w>130</w>
       <h>110</h>
@@ -113,14 +112,14 @@ password
     <panel_attributes>Driver
 --
 licenseNo
-category
+
 </panel_attributes>
     <additional_attributes/>
   </element>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>420</x>
+      <x>370</x>
       <y>270</y>
       <w>100</w>
       <h>100</h>
@@ -138,7 +137,7 @@ price
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>250</x>
+      <x>200</x>
       <y>280</y>
       <w>190</w>
       <h>50</h>
@@ -152,7 +151,7 @@ m2=1</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>250</x>
+      <x>200</x>
       <y>310</y>
       <w>190</w>
       <h>50</h>
@@ -166,7 +165,7 @@ m2=1</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>200</x>
+      <x>150</x>
       <y>350</y>
       <w>90</w>
       <h>130</h>
@@ -177,7 +176,7 @@ m2=1</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>140</x>
+      <x>90</x>
       <y>350</y>
       <w>90</w>
       <h>130</h>
@@ -188,7 +187,7 @@ m2=1</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>690</x>
+      <x>640</x>
       <y>380</y>
       <w>90</w>
       <h>100</h>
@@ -199,7 +198,7 @@ m2=1</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>620</x>
+      <x>570</x>
       <y>380</y>
       <w>100</w>
       <h>100</h>
@@ -210,7 +209,7 @@ m2=1</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>510</x>
+      <x>460</x>
       <y>290</y>
       <w>160</w>
       <h>50</h>
@@ -224,7 +223,7 @@ m2=*</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>490</x>
+      <x>440</x>
       <y>360</y>
       <w>50</w>
       <h>120</h>
@@ -238,7 +237,7 @@ m2=1</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>510</x>
+      <x>460</x>
       <y>320</y>
       <w>160</w>
       <h>50</h>
@@ -252,7 +251,7 @@ m2=1</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>230</x>
+      <x>180</x>
       <y>350</y>
       <w>270</w>
       <h>130</h>
@@ -262,5 +261,37 @@ r2=location
 m2=0..*
 </panel_attributes>
     <additional_attributes>10.0;10.0;10.0;40.0;200.0;40.0;200.0;110.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>800</x>
+      <y>250</y>
+      <w>100</w>
+      <h>140</h>
+    </coordinates>
+    <panel_attributes>Address
+--
+streetAddress
+streetNo
+postalCode
+city
+
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>690</x>
+      <y>280</y>
+      <w>130</w>
+      <h>50</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;&lt;-
+r1=address
+m1=*
+m2=1</panel_attributes>
+    <additional_attributes>10.0;20.0;110.0;20.0</additional_attributes>
   </element>
 </diagram>
