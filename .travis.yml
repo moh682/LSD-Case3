@@ -6,3 +6,12 @@ jdk:
 sudo: false # faster builds
 
 script: "mvn test"
+
+deploy:
+  provider: packagecloud
+  on:
+    branch: main
+  repository: "lsdcontract"
+  username: "cph-mn492@cphbusiness.dk"
+  token: "b3fb44eff6ea2820e289751f39d4afc1165e557f49724fe7"
+  dist: "java/maven2"
