@@ -5,7 +5,7 @@
     <Servers>
         <Server>
             <id>packagecloud.packagecloud-lsdckmwn</id>
-            <password>${env.PACKAGECLOUD_TOKEN}</password>
+            <password>ddfc864ff0a89a5b7b2fc0ea31dba2219253fb9ea42987c2</password>
         </Server>
     </Servers>
 </Settings>
