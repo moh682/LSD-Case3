@@ -11,6 +11,7 @@ deploy:
   provider: packagecloud
   on:
     branch: master
+  skip_cleanup: true
   repository: "lsdcontract"
   username: "lsdckmwn"
   token: "b3fb44eff6ea2820e289751f39d4afc1165e557f49724fe7"
