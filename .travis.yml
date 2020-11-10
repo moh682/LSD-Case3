@@ -7,13 +7,10 @@ sudo: false # faster builds
 
 script: "mvn test"
 
+before_install:
+  - cp .travis.settings.xml $HOME/.m2/settings.xml
+
 deploy:
-  provider: packagecloud
-  local-dir: out/artifacts/
-  on:
-    branch: master
-  cleanup: false
-  repository: "lsdcontract"
-  username: "lsdckmwn"
-  token: "b3fb44eff6ea2820e289751f39d4afc1165e557f49724fe7"
-  dist: "java/maven2"
+  provider: script
+  script: "mvn -B -V deploy"
+  skip_cleanup: true

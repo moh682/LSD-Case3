@@ -7,6 +7,7 @@
     <groupId>groupId</groupId>
     <artifactId>LSD-Case3</artifactId>
     <version>1.0-SNAPSHOT</version>
+
     <build>
         <extensions>
             <extension>
@@ -41,6 +42,15 @@
             </plugin>
         </plugins>
     </build>
-
+    <distributionManagement>
+        <repository>
+            <id>packagecloud.packagecloud-lsdckmwn</id>
+            <url>packagecloud+https://packagecloud.io/lsdckmwn/lsdcontract</url>
+        </repository>
+        <snapshotRepository>
+            <id>packagecloud.packagecloud-lsdckmwn</id>
+            <url>packagecloud+https://packagecloud.io/lsdckmwn/lsdcontract</url>
+        </snapshotRepository>
+    </distributionManagement>
 
 </project>
