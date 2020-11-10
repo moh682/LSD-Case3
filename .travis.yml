@@ -10,7 +10,7 @@ script: "mvn test"
 deploy:
   provider: packagecloud
   on:
-    branch: main
+    branch: master
   repository: "lsdcontract"
   username: "cph-mn492@cphbusiness.dk"
   token: "b3fb44eff6ea2820e289751f39d4afc1165e557f49724fe7"
