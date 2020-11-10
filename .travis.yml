@@ -9,6 +9,7 @@ script: "mvn test"
 
 deploy:
   provider: packagecloud
+  local-dir: out/artifacts/LSD_Case3_jar
   on:
     branch: master
   skip_cleanup: true
