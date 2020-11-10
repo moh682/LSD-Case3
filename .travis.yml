@@ -12,6 +12,6 @@ deploy:
   on:
     branch: master
   repository: "lsdcontract"
-  username: "cph-mn492@cphbusiness.dk"
+  username: "lsdckmwn"
   token: "b3fb44eff6ea2820e289751f39d4afc1165e557f49724fe7"
   dist: "java/maven2"
