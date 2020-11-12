@@ -75,4 +75,6 @@ public interface Contract {
      * @throws InvalidInputException
      */
     BookingDetails findBooking(BookingIdentifier id) throws NotFoundException, InvalidInputException;
+
+    String sayHellow(String name);
 }
