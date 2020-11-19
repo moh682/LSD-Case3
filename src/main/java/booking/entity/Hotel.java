@@ -3,19 +3,7 @@ package booking.entity;
 public class Hotel extends Place {
 
     private long id;
-
-
-    private enum Rating {
-        ONE,
-        TWO,
-        THREE,
-        FOUR,
-        FIVE
-    }
-
-    ;
     private Rating rating;
-
 
     public Hotel(String name, Address address, boolean active, long id, Rating rating) {
         super(name, address, active);
