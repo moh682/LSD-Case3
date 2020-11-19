@@ -4,14 +4,6 @@ public class Car {
 
     private String vin;
     private String licensePlate;
-    private enum Type {
-        A,
-        B,
-        C,
-        D,
-        E,
-        F
-    }
     private Type type;
     private double price;
     private int noOfSeats;
