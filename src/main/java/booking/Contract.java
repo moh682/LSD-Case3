@@ -27,14 +27,16 @@ public interface Contract {
     Double calculateFee(BookingCriteria bookingCriteria) throws InvalidInputException;
 
     /**
-     *
+     * 
      * @param bookingCriteria
-     * @param fee
+     * @param price
      * @param driverDetails
-     * @return bookingDetails
+     * @param employeeDetails
+     * @param carSummary
+     * @return
      * @throws InvalidInputException
      */
-    BookingDetails createBooking(BookingCriteria bookingCriteria, Double fee, DriverDetails driverDetails) throws InvalidInputException;
+    BookingDetails createBooking(BookingCriteria bookingCriteria, Double price, DriverDetails driverDetails, EmployeeDetails employeeDetails, CarSummary carSummary) throws InvalidInputException;
 
     /**
      *
