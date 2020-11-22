@@ -27,7 +27,7 @@ public interface Contract {
     Double calculateFee(BookingCriteria bookingCriteria) throws InvalidInputException;
 
     /**
-     * 
+     *
      * @param bookingCriteria
      * @param price
      * @param driverDetails
