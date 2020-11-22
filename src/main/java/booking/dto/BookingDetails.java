@@ -50,4 +50,20 @@ public class BookingDetails extends BookingIdentifier {
     public void setFee(Double fee) {
         this.fee = fee;
     }
+
+    public EmployeeDetails getEmployeeDetails() {
+        return employeeDetails;
+    }
+
+    public void setEmployeeDetails(EmployeeDetails employeeDetails) {
+        this.employeeDetails = employeeDetails;
+    }
+
+    public Double getPrice() {
+        return price;
+    }
+
+    public void setPrice(Double price) {
+        this.price = price;
+    }
 }
