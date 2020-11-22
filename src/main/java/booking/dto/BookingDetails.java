@@ -5,21 +5,18 @@ public class BookingDetails extends BookingIdentifier {
     private CarSummary car;
     private DriverDetails driverDetails;
     private BookingCriteria bookingCriteria;
+    private EmployeeDetails employeeDetails;
     private Double fee;
+    private Double price;
 
-    public BookingDetails(int id, CarSummary car, DriverDetails driverDetails, BookingCriteria bookingCriteria, Double fee) {
+    public BookingDetails(Long id, CarSummary car, DriverDetails driverDetails, EmployeeDetails employeeDetails, BookingCriteria bookingCriteria, Double fee, Double price) {
         super(id);
         this.car = car;
         this.driverDetails = driverDetails;
+        this.employeeDetails = employeeDetails;
         this.bookingCriteria = bookingCriteria;
         this.fee = fee;
-    }
-
-    public BookingDetails(int id, CarSummary car, DriverDetails driverDetails, BookingCriteria bookingCriteria) {
-        super(id);
-        this.car = car;
-        this.driverDetails = driverDetails;
-        this.bookingCriteria = bookingCriteria;
+        this.price = price;
     }
 
     public CarSummary getCar() {

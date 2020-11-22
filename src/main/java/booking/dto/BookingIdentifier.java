@@ -1,13 +1,13 @@
 package booking.dto;
 
 public class BookingIdentifier {
-    private final int id;
+    private final Long id;
 
-    public BookingIdentifier(int id) {
+    public BookingIdentifier(Long id) {
         this.id = id;
     }
 
-    public int getId() {
+    public Long getId() {
         return id;
     }
 }
