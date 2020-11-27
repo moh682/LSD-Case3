@@ -6,7 +6,7 @@
 
     <groupId>dk.teamc</groupId>
     <artifactId>LSD-Case3</artifactId>
-    <version>1.0.7</version>
+    <version>1.0.8</version>
 
     <build>
         <extensions>

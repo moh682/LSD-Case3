@@ -6,6 +6,8 @@ public class Airport extends Place {
 
     private String IATA;
 
+    public Airport(){}
+
     public Airport(String name, Address address, boolean active, String IATA) {
         super(name, address, active);
         this.IATA = IATA;

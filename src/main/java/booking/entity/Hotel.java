@@ -5,6 +5,8 @@ public class Hotel extends Place {
     private long id;
     private Rating rating;
 
+    public Hotel(){}
+
     public Hotel(String name, Address address, boolean active, long id, Rating rating) {
         super(name, address, active);
         this.id = id;

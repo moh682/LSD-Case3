@@ -8,6 +8,8 @@ public class Employee extends Person {
 
     private transient String password;
 
+    public Employee(){}
+
     public Employee(String name, Address address, String email, Date dateOfBirth, int socialSecurityNumber, boolean active, String username, String password) {
         super(name, address, email, dateOfBirth, socialSecurityNumber, active);
         this.username = username;

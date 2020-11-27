@@ -16,6 +16,8 @@ public class Person {
 
     private boolean active;
 
+    public Person(){}
+
     public Person(String name, Address address, String email, Date dateOfBirth, int socialSecurityNumber, boolean active) {
         this.name = name;
         this.address = address;

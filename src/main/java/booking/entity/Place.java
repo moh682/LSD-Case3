@@ -8,6 +8,8 @@ public class Place {
 
     private boolean active;
 
+    public Place(){}
+
     public Place(String name, Address address, boolean active) {
         this.name = name;
         this.address = address;

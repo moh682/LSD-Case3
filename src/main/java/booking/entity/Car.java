@@ -9,6 +9,8 @@ public class Car {
     private int noOfSeats;
     private transient boolean active;
 
+    public Car(){}
+
     public Car(String vin, String licensePlate, Type type, double price, int noOfSeats, boolean active) {
         this.vin = vin;
         this.licensePlate = licensePlate;
