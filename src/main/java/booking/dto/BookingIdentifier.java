@@ -1,7 +1,7 @@
 package booking.dto;
 
 public class BookingIdentifier {
-    private final Long id;
+    private Long id;
 
     public BookingIdentifier() {}
 
