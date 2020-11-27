@@ -1,6 +1,6 @@
 package booking.entity;
 
-public class Address {
+public class Address implements java.io.Serializable{
 
 
     private String streetAddress;

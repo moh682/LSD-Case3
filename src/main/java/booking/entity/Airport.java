@@ -2,7 +2,7 @@ package booking.entity;
 
 import java.util.Date;
 
-public class Airport extends Place {
+public class Airport extends Place implements java.io.Serializable{
 
     private String IATA;
 

@@ -2,7 +2,7 @@ package booking.dto;
 
 import booking.entity.Driver;
 
-public class DriverDetails {
+public class DriverDetails implements java.io.Serializable{
 
     private Driver driver;
 

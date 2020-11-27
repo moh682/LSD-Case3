@@ -1,6 +1,6 @@
 package booking.entity;
 
-public class Place {
+public class Place implements java.io.Serializable{
 
     private String name;
 

@@ -5,7 +5,7 @@ import booking.entity.Employee;
 
 import java.util.Date;
 
-public class EmployeeDetails {
+public class EmployeeDetails implements java.io.Serializable{
 
     private String name;
 

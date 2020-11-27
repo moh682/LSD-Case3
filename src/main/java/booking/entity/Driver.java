@@ -2,7 +2,7 @@ package booking.entity;
 
 import java.util.Date;
 
-public class Driver extends Person {
+public class Driver extends Person implements java.io.Serializable{
 
     private long licenseNo;
 

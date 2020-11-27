@@ -1,6 +1,6 @@
 package booking.dto;
 
-public class BookingIdentifier {
+public class BookingIdentifier implements java.io.Serializable{
     private Long id;
 
     public BookingIdentifier() {}

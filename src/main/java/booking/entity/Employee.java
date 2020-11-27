@@ -2,7 +2,7 @@ package booking.entity;
 
 import java.util.Date;
 
-public class Employee extends Person {
+public class Employee extends Person implements java.io.Serializable{
 
     private String username;
 

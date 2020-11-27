@@ -1,6 +1,6 @@
 package booking.entity;
 
-public enum  Type {
+public enum  Type implements java.io.Serializable{
     A,
     B,
     C,

@@ -1,6 +1,6 @@
 package booking.entity;
 
-public class Hotel extends Place {
+public class Hotel extends Place implements java.io.Serializable{
 
     private long id;
     private Rating rating;

@@ -3,7 +3,7 @@ package booking.dto;
 import booking.entity.Car;
 import booking.entity.Place;
 
-public class CarSummary {
+public class CarSummary implements java.io.Serializable{
     private Car car;
     private Place place;
 

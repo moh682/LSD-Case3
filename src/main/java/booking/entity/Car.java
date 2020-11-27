@@ -1,6 +1,6 @@
 package booking.entity;
 
-public class Car {
+public class Car implements java.io.Serializable{
 
     private String vin;
     private String licensePlate;
