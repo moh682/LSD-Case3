@@ -7,6 +7,7 @@ import booking.eto.NotFoundException;
 import booking.eto.PersistanceFailedException;
 
 import java.rmi.Remote;
+import java.rmi.RemoteException;
 import java.util.Collection;
 
 public interface Contract extends Remote {
@@ -17,7 +18,7 @@ public interface Contract extends Remote {
      * @throws NotFoundException
      * @throws InvalidInputException
      */
-    Collection<CarSummary> listAvailableCars(BookingCriteria bookingCriteria) throws NotFoundException, InvalidInputException;
+    Collection<CarSummary> listAvailableCars(BookingCriteria bookingCriteria) throws NotFoundException, InvalidInputException, RemoteException;
 
     /**
      *
@@ -25,7 +26,7 @@ public interface Contract extends Remote {
      * @return fee
      * @throws InvalidInputException
      */
-    Double calculateFee(BookingCriteria bookingCriteria) throws InvalidInputException;
+    Double calculateFee(BookingCriteria bookingCriteria) throws InvalidInputException, RemoteException;
 
     /**
      *
@@ -37,7 +38,7 @@ public interface Contract extends Remote {
      * @return
      * @throws InvalidInputException
      */
-    BookingDetails createBooking(BookingCriteria bookingCriteria, Double price, DriverDetails driverDetails, EmployeeDetails employeeDetails, CarSummary carSummary) throws InvalidInputException;
+    BookingDetails createBooking(BookingCriteria bookingCriteria, Double price, DriverDetails driverDetails, EmployeeDetails employeeDetails, CarSummary carSummary) throws InvalidInputException, RemoteException;
 
     /**
      *
@@ -46,7 +47,7 @@ public interface Contract extends Remote {
      * @throws PersistanceFailedException
      * @throws UnavailableException
      */
-    BookingDetails saveBooking(BookingDetails bookingDetails) throws PersistanceFailedException, UnavailableException;
+    BookingDetails saveBooking(BookingDetails bookingDetails) throws PersistanceFailedException, UnavailableException, RemoteException;
 
     /**
      *
@@ -57,7 +58,7 @@ public interface Contract extends Remote {
      * @throws UnavailableException
      * @throws InvalidInputException
      */
-    boolean cancelBooking(BookingIdentifier id) throws PersistanceFailedException, NotFoundException, UnavailableException, InvalidInputException;
+    boolean cancelBooking(BookingIdentifier id) throws PersistanceFailedException, NotFoundException, UnavailableException, InvalidInputException, RemoteException;
 
     /**
      *
@@ -68,7 +69,7 @@ public interface Contract extends Remote {
      * @throws UnavailableException
      * @throws InvalidInputException
      */
-    BookingDetails endBooking(BookingIdentifier id) throws PersistanceFailedException, NotFoundException, UnavailableException, InvalidInputException;
+    BookingDetails endBooking(BookingIdentifier id) throws PersistanceFailedException, NotFoundException, UnavailableException, InvalidInputException, RemoteException;
 
     /**
      *
@@ -77,5 +78,5 @@ public interface Contract extends Remote {
      * @throws NotFoundException
      * @throws InvalidInputException
      */
-    BookingDetails findBooking(BookingIdentifier id) throws NotFoundException, InvalidInputException;
+    BookingDetails findBooking(BookingIdentifier id) throws NotFoundException, InvalidInputException, RemoteException;
 }
