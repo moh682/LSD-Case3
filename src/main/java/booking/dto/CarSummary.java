@@ -7,6 +7,8 @@ public class CarSummary {
     private Car car;
     private Place place;
 
+    public CarSummary(){}
+
     public CarSummary(Car car, Place place) {
         this.car = car;
         this.place = place;

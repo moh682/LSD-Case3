@@ -15,6 +15,8 @@ public class BookingCriteria {
 
     private LocalDateTime deliveryTime;
 
+    public BookingCriteria() {}
+
     public BookingCriteria(Place pickUpPlace, Place deliveryPlace, LocalDateTime pickUpTime, LocalDateTime deliveryTime) {
         this.pickUpPlace = pickUpPlace;
         this.deliveryPlace = deliveryPlace;

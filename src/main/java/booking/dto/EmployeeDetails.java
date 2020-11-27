@@ -17,6 +17,7 @@ public class EmployeeDetails {
 
     private int socialSecurityNumber;
 
+    public EmployeeDetails(){}
 
     public EmployeeDetails(Employee employee) {
         this.name = employee.getName();

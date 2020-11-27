@@ -9,6 +9,8 @@ public class BookingDetails extends BookingIdentifier {
     private Double fee;
     private Double price;
 
+    public BookingDetails() {}
+
     public BookingDetails(Long id, CarSummary car, DriverDetails driverDetails, EmployeeDetails employeeDetails, BookingCriteria bookingCriteria, Double fee, Double price) {
         super(id);
         this.car = car;
