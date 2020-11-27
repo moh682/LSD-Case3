@@ -1,6 +1,6 @@
 package booking.dto;
 
-public class BookingDetails extends BookingIdentifier {
+public class BookingDetails extends BookingIdentifier implements java.io.Serializable{
 
     private CarSummary car;
     private DriverDetails driverDetails;
