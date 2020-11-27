@@ -4,7 +4,7 @@ import booking.entity.Place;
 
 import java.time.LocalDateTime;
 
-public class BookingCriteria {
+public class BookingCriteria implements java.io.Serializable{
 
 
     private Place pickUpPlace;
