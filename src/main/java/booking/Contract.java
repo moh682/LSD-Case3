@@ -6,9 +6,10 @@ import booking.eto.InvalidInputException;
 import booking.eto.NotFoundException;
 import booking.eto.PersistanceFailedException;
 
+import java.rmi.Remote;
 import java.util.Collection;
 
-public interface Contract {
+public interface Contract extends Remote {
 
     /**
      * @param bookingCriteria
